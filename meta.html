@@ -1,0 +1,7 @@
+---
+layout: default
+title: Meta MIPs
+---
+
+{% assign mips=site.pages|where:"type","Meta" %}
+{% include miptable.html mips=mips %}

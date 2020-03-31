@@ -1,0 +1,7 @@
+---
+layout: default
+title: Technical MIPs
+---
+
+{% assign mips=site.pages|where:"type","Technical" %}
+{% include miptable.html mips=mips %}

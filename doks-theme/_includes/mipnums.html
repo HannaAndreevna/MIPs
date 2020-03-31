@@ -1,0 +1,4 @@
+{% assign mips=include.mips|split:"," %}
+{% for mipnum in mips %}
+<a href="{{mipnum|strip|prepend:"mip-" }}">{{mipnum|strip}}</a>{% if forloop.last == false %}, {% endif %}
+{% endfor %}

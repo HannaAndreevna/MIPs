@@ -1,0 +1,55 @@
+# Theme settings
+doks:
+    baseurl:
+    color_theme: green
+    header:
+        logo:
+            text: OpenMAVN MIPs
+            image:
+        nav:
+            - item_name: All
+              item_url: '/all'
+            - item_name: Use Cases
+              item_url: '/use-cases'
+            - item_name: Technical
+              item_url: '/technical'
+            - item_name: Meta
+              item_url: '/meta'
+            - item_name: Informational
+              item_url: '/informational'
+    footer:
+        content:
+            logo:
+                text: MAVN Alliance
+                image:
+            copyright: Copyright &copy; 2020 Lykke Business AG and Contributors.
+        social_list:
+            - network_name: github
+              profile_url: 'https://github.com/OpenMAVN'
+            - network_name: telegram
+              profile_url: 'https://t.me/mavnalliance'
+            - network_name: twitter
+              profile_url: 'https://twitter.com/AllianceMavn'
+            - network_name: linkedin
+              profile_url: 'https://linkedin.com/showcase/mavn-alliance'
+    google_analytics:
+        tracking_code: # Add your Google Analytics tracking code to activate Google Analytics
+    comments:
+        disqus_forum_shortname: # Add your disqus forum shortname to activate comments
+
+# SASS settings
+sass:
+    sass_dir: ./doks-theme/_sass
+    style: :compressed
+
+# Jekyll settings
+layouts_dir: ./doks-theme/_layouts
+includes_dir: ./doks-theme/_includes
+defaults:
+    -
+        scope:
+            path: "MIPS"
+        values:
+            layout: "mip"
+exclude: [ 'README.md', 'CHANGELOG.md', 'mip-template.md' ]
+permalink: /:title/
